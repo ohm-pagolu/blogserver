@@ -1,0 +1,8 @@
+<div *ngIf="post">
+
+<button (click)="editPost()" style="background-color:darkblue;">edit</button>
+<div id="markdown">
+<div [innerHTML]="title"></div>
+<div [innerHTML]="body"></div>
+</div>
+</div>

@@ -1,0 +1,6 @@
+<button (click)="createNewPost()" style="background-color: green;">New Post</button>
+<ul class="posts">
+    <li *ngFor="let post of posts" (click)="onSelect(post)" >
+            <span class="badge">{{ post.created | date:'yyyy-MM-dd HH:mm:ss'}}</span> {{post.title}}
+    </li>
+</ul>

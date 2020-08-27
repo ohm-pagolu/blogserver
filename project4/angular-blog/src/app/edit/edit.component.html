@@ -1,0 +1,19 @@
+<div *ngIf="post">
+<label>Title: <br>
+<input id='title' placeholder="title" [(ngModel)]="post.title">
+</label>
+
+<div> 
+<label>
+Body : <br>
+
+<textarea [(ngModel)]="post.body" id="tarea"></textarea>
+</label>
+</div>
+<p>Last modified at {{ post.modified | date:'yyyy-MM-dd HH:mm:ss'}}</p>
+<button (click)="savePost()" style="background-color: blue;">save</button>
+<button (click)="previewPost()" style="background-color: blue;">preview</button>
+<button (click)="deletePost()" style="background-color: red;">delete</button>
+
+
+</div>

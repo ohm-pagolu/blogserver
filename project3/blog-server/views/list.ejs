@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Post List</title>
+</head>
+<body>
+    
+    <% for (let i = 0; i < posts.length; i++) { %>
+        <div>
+            <div id="title"><%- posts[i].title %></div>
+            <p><small>Created at <%- posts[i].created %>,    Modified at <%- posts[i].modified %> </small></p>
+            <div id="body"><%- posts[i].body %></div>
+        </div>
+        <hr>
+    <% } %>
+
+    <a id="next" href="http://localhost:3000/blog/<%-title%>?start=<%-start%>">Next</a>
+    
+</html>
