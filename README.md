@@ -1,1 +1,1 @@
-# CS144
+# BlogServer
